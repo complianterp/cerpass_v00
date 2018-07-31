@@ -12,7 +12,6 @@ namespace complianterp.model;
         key id          : Integer not null;
         key mainmenu    : Integer not null;
             title       : String(50);
-            to_mainmenu : association[1] to SideMain on to_mainmenu.id = id;
     };
 
     /*@@LAYOUT{"LAYOUTINFO":{"X":348,"Y":-45.5}}*/

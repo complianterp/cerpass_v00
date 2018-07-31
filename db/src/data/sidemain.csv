@@ -1,0 +1,4 @@
+ID,TITLE,ICON,EXPANDED
+1,Dashboard,sap-icon://building,false
+2,Master Data, sap-icon://employee,false
+3,Source Data, sap-icon://employee,false

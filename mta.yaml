@@ -27,17 +27,10 @@ modules:
             {"service_name_for_DefaultDB" : "~{hdi-container-name}"}]'
 
 
- - name: ui
-   type: html5
-   path: ui
-   parameters:
-      disk-quota: 256M
-      memory: 256M
-   build-parameters:
-      builder: grunt
-   requires:
-    - name: uaa_cerpass_v00
-    - name: dest_cerpass_v00
+ 
+
+
+ 
 
 resources:
  - name: hdi_db

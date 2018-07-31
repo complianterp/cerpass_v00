@@ -1,0 +1,18 @@
+{
+"format_version": 1,
+"imports":[{
+"target_table": "COMPLIANTERP_MODEL_SIDEMAIN",
+"source_data":{
+	"data_type": "CSV",
+	"file_name": "sidemain.csv",
+	"has_header": true,
+	"delete_existing_foreign_data": true,
+	"dialect": "HANA",
+	"type_config": { "delimiter": "," }
+},
+"import_settings":{
+	"import_columns": [	"ID", "TITLE",	"ICON",	"EXPANDED"]
+},
+"column_mapping": {	"ID": 1, "TITLE": 2, "ICON": 3, "EXPANDED": 4 }
+}]
+}
