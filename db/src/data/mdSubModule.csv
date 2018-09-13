@@ -1,0 +1,7 @@
+MODULE_ID,SUB_MODULE_ID,SUB_MODULE_NAME
+FI,FI01,Accounts Payable
+FI,FI02,Accounts Receivale
+FI,FI03,General Ledger
+LO,LO01,Purchasing
+LO,LO02,Materials Management
+SD,SD01,Sales Orders

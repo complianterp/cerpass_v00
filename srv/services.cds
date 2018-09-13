@@ -8,7 +8,8 @@ using complianterp.model from '../db/data-model';
 service MenuService {
 	entity MainMenu @readonly as projection on model.SideMain;
 	entity SubMenu @readonly as projection on model.SideSubMenu;
-
+	view Fixed as select from model.SideMain { id, title, icon } where location='fix' order by sorting;
+	view Menu as select from model.SideMain { id, title, icon, expanded, submenu, viewname } where location='dyn' order by sorting; 
 
 	// [ADDING EXTERNAL SERVICE] - STEP 3 - Add a new entity to the exposed service model:
 	// @cds.persistence.skip

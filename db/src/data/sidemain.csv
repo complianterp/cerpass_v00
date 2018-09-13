@@ -1,4 +1,8 @@
-ID,TITLE,ICON,EXPANDED
-1,Dashboard,sap-icon://building,false
-2,Master Data, sap-icon://employee,false
-3,Source Data, sap-icon://employee,false
+ID,TITLE,ICON,EXPANDED,VIEWNAME,LOCATION,SORTING
+HO,Home Page,sap-icon://home,false,homepage,dyn,1
+DB,Dashboard,sap-icon://multiple-line-chart,false,dashboard,dyn,2
+MD,Master Data,sap-icon://it-system,false,tileMasterData,dyn,3
+SD,Source Data,sap-icon://it-system,false,tileSourceData,dyn,4
+CO,Configuration,sap-icon://action-settings,false,tileConfiguration,dyn,5
+US,Useful Links,sap-icon://sys-help,false,unknown,fix,1
+LE,Legal,sap-icon://compare,false,unknown,fix,2

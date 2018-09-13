@@ -1,0 +1,7 @@
+ID,MAINMENU,TITLE,VIEWNAME,SORTING
+MD01,MD,Module/SubModule,module,3
+MD02,MD,Activities,activities,2
+MD03,MD,Risks,risks,1
+SD01,SD,User Data,sourceUser,1
+SD02,SD,Role Data,sourceRole,2
+SD03,SD,Transaction Usage,sourceTranUsage,3

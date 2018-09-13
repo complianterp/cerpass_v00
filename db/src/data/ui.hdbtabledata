@@ -1,6 +1,8 @@
 {
 "format_version": 1,
-"imports":[{
+"imports":
+[
+{
 "target_table": "COMPLIANTERP_MODEL_SIDEMAIN",
 "source_data":{
 	"data_type": "CSV",
@@ -11,8 +13,53 @@
 	"type_config": { "delimiter": "," }
 },
 "import_settings":{
-	"import_columns": [	"ID", "TITLE",	"ICON",	"EXPANDED"]
+	"import_columns": [	"ID", "TITLE",	"ICON",	"EXPANDED", "VIEWNAME", "LOCATION", "SORTING"]
 },
-"column_mapping": {	"ID": 1, "TITLE": 2, "ICON": 3, "EXPANDED": 4 }
-}]
+"column_mapping": {	"ID": 1, "TITLE": 2, "ICON": 3, "EXPANDED": 4, "VIEWNAME": 5, "LOCATION": 6, "SORTING": 7 }
+},
+{
+"target_table": "COMPLIANTERP_MODEL_SIDESUBMENU",
+"source_data":{
+	"data_type": "CSV",
+	"file_name": "sidesub.csv",
+	"has_header": true,
+	"delete_existing_foreign_data": true,
+	"dialect": "HANA",
+	"type_config": { "delimiter": "," }
+},
+"import_settings":{
+	"import_columns": [	"ID", "MAINMENU", "TITLE", "VIEWNAME", "SORTING"]
+},
+"column_mapping": {	"ID": 1, "MAINMENU": 2, "TITLE": 3, "VIEWNAME": 4, "SORTING": 5 }
+},
+{
+"target_table": "COMPLIANTERP_MODEL_MODULE",
+"source_data":{
+	"data_type": "CSV",
+	"file_name": "mdModule.csv",
+	"has_header": true,
+	"delete_existing_foreign_data": true,
+	"dialect": "HANA",
+	"type_config": { "delimiter": "," }
+},
+"import_settings":{
+	"import_columns": [	"MODULE_ID", "MODULE_NAME"]
+},
+"column_mapping": {	"MODULE_ID": 1, "MODULE_NAME": 2 }
+},
+{
+"target_table": "COMPLIANTERP_MODEL_SUB_MODULE",
+"source_data":{
+	"data_type": "CSV",
+	"file_name": "mdSubModule.csv",
+	"has_header": true,
+	"delete_existing_foreign_data": true,
+	"dialect": "HANA",
+	"type_config": { "delimiter": "," }
+},
+"import_settings":{
+	"import_columns": [	"MODULE_ID", "SUB_MODULE_ID", "SUB_MODULE_NAME"]
+},
+"column_mapping": {	"MODULE_ID": 1, "SUB_MODULE_ID": 2,"SUB_MODULE_NAME": 3 }
 }
+]}
